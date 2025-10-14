@@ -2,13 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import MarketplacePage from "./pages/MarketplacePage";
 import SkinDetailPage from "./pages/SkinDetailPage";
-import NavbarComponent from "./components/NavbarComponent";
+import Navbar from "./components/Navbar";
 
 function App() {
 
   return (
     <>
-      <NavbarComponent />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
