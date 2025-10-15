@@ -5,6 +5,7 @@ import Registro from "./pages/Registro";
 import MarketplacePage from "./pages/MarketplacePage";
 import SkinDetailPage from "./pages/SkinDetailPage";
 import Navbar from "./components/Navbar";
+import Carrito from "./pages/Carrito";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
+        <Route path="/carrito" element={<Carrito />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
         <Route path="/skin/:id" element={<SkinDetailPage />} />
       </Routes>
