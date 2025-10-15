@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Registro from "./pages/Registro";
 import MarketplacePage from "./pages/MarketplacePage";
 import SkinDetailPage from "./pages/SkinDetailPage";
 import Navbar from "./components/Navbar";
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
         <Route path="/skin/:id" element={<SkinDetailPage />} />
       </Routes>
