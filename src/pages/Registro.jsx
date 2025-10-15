@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/icon.png';
 import "../assets/css/style.css";
 
 
 
+
 function Registro() {
+    useEffect(() => {
+      document.title = "Registrarse | Golden Rose";
+    }, []);
+
   return (
     <>
       <main className="container my-5">
