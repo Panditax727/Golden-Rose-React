@@ -71,9 +71,13 @@ function Navbar() {
                 <Link className="nav-link" to="/login">Iniciar sesión</Link>
               </li>
               <li className="nav-item">
-                <button className="btn btn-primary btn-sm">
-                  <i className="bi bi-cart"></i> Carrito (0)
-                </button>
+                <Link className="nav-link" to="/carrito">                
+                  <button className="btn btn-primary btn-sm">
+                      <i className="bi bi-cart">
+                      </i> Carrito (0)
+                  </button>
+                </Link>
+
               </li>
             </ul>
           </div>
