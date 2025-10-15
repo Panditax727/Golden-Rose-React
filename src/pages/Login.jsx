@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import logo from '../assets/icon.png';
 import "../assets/css/style.css";
 
+
+
+
 function Login() {
+  useEffect(() => {
+    document.title = "Inicio Sesion | Golden Rose";
+  }, []);
+  
   return (
-    <>    
+    <>  
     <main class="container my-5">
-      
+
       <section className="text-center m-5">
         <figure className="centrar-logo">
           <img
