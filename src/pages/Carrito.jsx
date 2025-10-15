@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/style.css";
 
+
 function Carrito() {
+    useEffect(() => {
+      document.title = "Carrito | Golden Rose";
+    }, []);    
+
   return (
     <>
       <main className="container my-5" id="contacto">
