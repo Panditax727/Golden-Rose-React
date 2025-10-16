@@ -7,6 +7,7 @@ function MarketplacePage() {
   return (
     <Container className="mt-4">
       <h1>Mercado de Skins</h1>
+      <Search/>
       <Row>
         {skinsData.map(skin => (
           <Col key={skin.id} xs={12} md={6} lg={3}>
