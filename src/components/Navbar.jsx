@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/icon.png';
+import logo from "../assets/icon.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import "../assets/css/style.css";
+
+
 
 
 function Navbar() {
@@ -65,10 +69,10 @@ function Navbar() {
                 <Link className="nav-link" to="/contacto">Contacto</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/registro">Registrarse</Link>
+                <Link className="nav-link" to="/login">Iniciar sesión</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/login">Iniciar sesión</Link>
+                <Link className="nav-link" to="/registro">Registrarse</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/carrito">                
