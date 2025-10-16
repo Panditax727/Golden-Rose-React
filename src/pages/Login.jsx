@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import logo from '../assets/icon.png';
-import "../assets/css/style.css";
+import "../css/style.css";
 
 
 function Login() {

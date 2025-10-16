@@ -1,12 +1,13 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from '../assets/Bocetos/Original_logo.png';
 
 function NavbarComponent() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <img
-          src="src/assets/Bocetos/Original_logo.png"
+          src={logo}
           width="30"
           height="30"
           className="d-inline-block align-top"

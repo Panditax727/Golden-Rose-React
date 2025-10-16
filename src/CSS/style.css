@@ -64,11 +64,29 @@
   background-color: #ff4655;
 }
 .card {
-  background-color: #1a232e;
+  /* Make cards white for better contrast */
+  background-color: #ffffff;
   border: none;
 }
 .card-title, .card-text {
-  color: #fff;
+  /* Dark text on white background */
+  color: #222222;
+}
+
+/* Specific cart item style to ensure white background where used */
+.cart-item {
+  background-color: #ffffff;
+}
+
+/* Product card specific styling */
+.product-card {
+  background-color: #ffffff; /* ensure white background */
+  border: 1px solid rgba(34,34,34,0.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.product-card .card-body {
+  background-color: #ffffff;
+  color: #222222;
 }
 .btn-primary {
   background-color: #ff4655;

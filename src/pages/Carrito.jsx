@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../assets/css/style.css";
+import "../css/style.css";
 
 
 function Carrito() {
