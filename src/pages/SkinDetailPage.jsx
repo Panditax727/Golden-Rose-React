@@ -20,11 +20,11 @@ function SkinDetailPage() {
     return (
         <Container className="mt-5">
             <Row>
-                <Col md={6}>
-                    <img src={skin.image} alt={skin.name} />
+                <Col md={9}>
+                    <img src={skin.image} alt={skin.name} width="160%" />
                 </Col>
 
-                <Col md={6}>
+                <Col md={3}>
                     <h1>{skin.name}</h1>
                     <p className="lead">
                         Una de las skins más deseadas del mercado. Perfecta para destacar en tus partidas.

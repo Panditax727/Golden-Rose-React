@@ -5,7 +5,7 @@
     "price": 45.50,
     "Type": "Rifle",
     "Category": "https://c-valorant-api.op.gg/Assets/ContentTiers/60BCA009-4182-7998-DEE7-B8A2558DC369.svg",
-    "image": "src/assets/valorant_skins/reaver_vandal.png",
+    "image": "/assets/valorant_skins/reaver_vandal.png",
     "desc": "La skin Reaver Vandal es una adición impresionante a tu arsenal en Valorant. Con un diseño futurista y detalles vibrantes, esta skin no solo mejora la apariencia de tu arma, sino que también te brinda una experiencia única en el juego. Con detalles exclusivos y un diseño impresionante, es la elección perfecta para cualquier jugador serio."
   },
   {
@@ -14,7 +14,7 @@
     "price": 25.00,
     "Type": "Rifle",
     "Category": "https://c-valorant-api.op.gg/Assets/ContentTiers/E046854E-406C-37F4-6607-19A9BA8426FC.svg",
-    "image": "src/assets/valorant_skins/champions2025_vandal.png",
+    "image": "/assets/valorant_skins/champions2025_vandal.png",
     "desc": "La skin Champions 2025 Vandal es una adición impresionante a tu arsenal en Valorant. Con un diseño futurista y detalles vibrantes, esta skin no solo mejora la apariencia de tu arma, sino que también te brinda una experiencia única en el juego. Con detalles exclusivos y un diseño impresionante, es la elección perfecta para cualquier jugador serio."
   },
   {
@@ -23,7 +23,16 @@
     "price": 70.00,
     "Type": "Knife",
     "Category": "https://c-valorant-api.op.gg/Assets/ContentTiers/411E4A55-4E59-7757-41F0-86A53F101BB5.svg",
-    "image": "src/assets/valorant_skins/xenohunter_knife.png",
+    "image": "/assets/valorant_skins/xenohunter_knife.png",
     "desc": "El Xenohunter Knife es una adición impresionante a tu arsenal en Valorant. Con un diseño futurista y detalles vibrantes, esta skin no solo mejora la apariencia de tu arma, sino que también te brinda una experiencia única en el juego. Con detalles exclusivos y un diseño impresionante, es la elección perfecta para cualquier jugador serio."
+  },
+  {
+    "id": "prime-phantom",
+    "name": "Phantom Prime",
+    "price": 30.00,
+    "Type": "Rifle",
+    "Category": "https://c-valorant-api.op.gg/Assets/ContentTiers/60BCA009-4182-7998-DEE7-B8A2558DC369.svg",
+    "image": "/assets/valorant_skins/prime_phantom.png",
+    "desc": "La skin Prime Phantom es una adición impresionante a tu arsenal en Valorant. Con un diseño futurista y detalles vibrantes, esta skin no solo mejora la apariencia de tu arma, sino que también te brinda una experiencia única en el juego. Con detalles exclusivos y un diseño impresionante, es la elección perfecta para cualquier jugador serio."
   }
 ]
