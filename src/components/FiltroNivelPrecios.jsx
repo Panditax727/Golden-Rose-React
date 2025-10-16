@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 function FiltroNivelPrecios() {
-  const [selected, setSelected] = useState("Todos");
 
+  const [selected, setSelected] = useState("Todos");
   const tiers = [
     {
       name: "Todos",
@@ -38,27 +38,29 @@ function FiltroNivelPrecios() {
       {/* Lista de botones */}
       <div className="flex flex-wrap gap-2">
         {tiers.map((tier) => (
-          <span
-            key={tier.name}
-            onClick={() => setSelected(tier.name)}
-            className={`flex cursor-pointer items-center gap-1 rounded-full px-3 py-1 text-xs transition ${
-              selected === tier.name
-                ? "bg-main-500 font-bold text-gray-0"
-                : "bg-darkpurple-900 hover:bg-darkpurple-700"
-            }`}
-          >
-            {tier.img && (
-              <img
-                alt={tier.name}
-                loading="lazy"
-                width="20"
-                height="20"
-                src={tier.img}
-                className="size-5"
-              />
-            )}
-            {tier.name}
-          </span>
+          <button className="btn btn-primary">
+            <span
+              key={tier.name}
+              onClick={() => setSelected(tier.name)}
+              className={`flex cursor-pointer items-center gap-1 rounded-full px-3 py-1 text-xs transition ${
+                selected === tier.name
+                  ? "bg-main-500 font-bold text-gray-0"
+                  : "bg-darkpurple-900 hover:bg-darkpurple-700"
+              }`}
+              >
+              {tier.img && (
+                <img
+                  alt={tier.name}
+                  loading="lazy"
+                  width="20"
+                  height="20"
+                  src={tier.img}
+                  className="size-5"
+                />
+              )}
+              {tier.name}
+            </span>
+          </button>
         ))}
       </div>
     </div>
