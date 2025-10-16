@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div></div>
+    <div></div> // Comentado para realizar el commit y sincronizar cambios
   )
 }
 
