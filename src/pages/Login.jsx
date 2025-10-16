@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import logo from '../assets/icon.png';
 import "../assets/css/style.css";
-
-
 
 
 function Login() {
@@ -101,6 +99,7 @@ function Login() {
         </article>
       </section>  
     </main>
+    <Footer />
     </>
   );
 }
