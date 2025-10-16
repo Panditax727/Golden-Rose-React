@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/icon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
-import "../assets/css/style.css";
+import "../css/home_style.css";
 
 
 
@@ -60,7 +60,7 @@ function Navbar() {
                 <Link className="nav-link" to="/">Inicio</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/productos">Productos</Link>
+                <Link className="nav-link" to="/marketplace">Productos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/blog">Blog</Link>
