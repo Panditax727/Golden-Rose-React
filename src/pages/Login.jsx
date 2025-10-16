@@ -82,7 +82,7 @@ function Login() {
             </div>
 
             {/* Enlaces secundarios */}
-            <div className="col-12 mt-3 text-center">
+            <div className="col-12 text-center py-4 border-top mt-5">
               <p>
                 <a href="#forgot-password" className="text-primary">
                   ¿Olvidaste tu Contraseña?
