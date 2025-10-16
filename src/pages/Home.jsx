@@ -11,7 +11,7 @@ function Home() {
   return (
     <Container className="my-5">
       {/* Carousel de skins destacadas */}
-      <Carousel id='carouselSkins' interval={3000} pause='hover'>
+      <Carousel  id='carouselSkins' interval={3000} pause='hover'>
         {featured.map((skin) => (
           <Carousel.Item key={skin.id}>
             <div style={{ display: 'flex', justifyContent: 'center', cursor: 'pointer' }} onClick={() => navigate(`/skin/${skin.id}`)}>
@@ -34,9 +34,9 @@ function Home() {
         <h2 className="mb-4 text-center">Comentarios y calificaciones</h2>
         <Row>
           <Col md={4}>
-            <Card className="mb-3">
+            <Card className="mb-3 knife-card comentario-text" id='comentarios h2'>
               <Card.Body>
-                <Card.Title>Juan</Card.Title>
+                <Card.Title style={{ color: 'white' }}>Juan</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">5/5</Card.Subtitle>
                 <Card.Text>
                   Excelente selección de skins. Servicio rápido y precios justos.
@@ -46,9 +46,9 @@ function Home() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="mb-3">
+            <Card className="mb-3 knife-card">
               <Card.Body>
-                <Card.Title>María</Card.Title>
+                <Card.Title style={{ color: 'white' }}>María</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">4.5/5</Card.Subtitle>
                 <Card.Text>
                   Gran experiencia, la skin llegó en perfecto estado.
@@ -58,9 +58,9 @@ function Home() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="mb-3">
+            <Card className="mb-3 knife-card">
               <Card.Body>
-                <Card.Title>Carlos</Card.Title>
+                <Card.Title style={{ color: 'white' }}>Carlos</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">5/5</Card.Subtitle>
                 <Card.Text>
                   Muy recomendado, buen soporte y producto tal cual la descripción.
