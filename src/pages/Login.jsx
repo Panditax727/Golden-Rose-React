@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 import logo from '../assets/icon.png';
 import "../css/style.css";
 
@@ -99,7 +98,6 @@ function Login() {
         </article>
       </section>  
     </main>
-    <Footer />
     </>
   );
 }
