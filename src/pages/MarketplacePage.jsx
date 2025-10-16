@@ -1,11 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import SkinCard from '../components/SkinCard';
 import skinsData from '../data/data.json'; // Importamos datos de prueba desde el json
+import Search from '../components/Search';
 
 function MarketplacePage() {
   return (
     <Container className="mt-4">
       <h1>Mercado de Skins</h1>
+      <Search/>      
       <Row className="mt-3" md={12}>
         {skinsData.map(skin => (
           <Col key={skin.id} xs={12} md={6} lg={3}>
