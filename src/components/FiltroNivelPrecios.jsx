@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function FiltroNivelPrecios() {
 
+  
   const [selected, setSelected] = useState("Todos");
   const tiers = [
     {
@@ -31,39 +32,35 @@ function FiltroNivelPrecios() {
   ];
 
   return (
-    <div className="flex items-center border-darkpurple-900 bg-darkpurple-800 px-3 py-2 text-darkpurple-300 rounded-b border-0">
-      {/* Texto del filtro */}
-      <div className="min-w-[120px] font-medium">Nivel de precio</div>
-
-      {/* Lista de botones */}
-      <div className="flex flex-wrap gap-2">
+    <>
+    <div>Nivel de precio</div>
+      <div className="flex flex-wrap gap-4 ">
         {tiers.map((tier) => (
-          <button className="btn btn-primary">
-            <span
-              key={tier.name}
-              onClick={() => setSelected(tier.name)}
-              className={`flex cursor-pointer items-center gap-1 rounded-full px-3 py-1 text-xs transition ${
+          <button
+            key={tier.name}
+            onClick={() => setSelected(tier.name)}
+            className={`flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium transition-all border btn btn-primary me-4
+              ${
                 selected === tier.name
-                  ? "bg-main-500 font-bold text-gray-0"
-                  : "bg-darkpurple-900 hover:bg-darkpurple-700"
+                  ? "bg-main-500 border-main-600 text-white shadow-md"
+                  : "bg-darkpurple-900 border-darkpurple-700 text-darkpurple-200 hover:bg-darkpurple-700"
               }`}
-              >
-              {tier.img && (
-                <img
-                  alt={tier.name}
-                  loading="lazy"
-                  width="20"
-                  height="20"
-                  src={tier.img}
-                  className="size-5"
-                />
-              )}
-              {tier.name}
-            </span>
+          >
+            {tier.img && (
+              <img
+                alt={tier.name}
+                src={tier.img}
+                width="20"
+                height="20"
+                className="size-5"
+                loading="lazy"
+              />
+            )}
+            {tier.name}
           </button>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 
