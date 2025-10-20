@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+import Navbar from "../components/Navbar";
 import "../css/style.css";
+import Footer from "../components/Footer";
 
 
 function Carrito() {
@@ -9,6 +11,7 @@ function Carrito() {
 
   return (
     <>
+      <Navbar />
       <main className="container my-5" id="contacto">
         <div className="row justify-content-center">
 
@@ -167,6 +170,7 @@ function Carrito() {
           </section>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }
