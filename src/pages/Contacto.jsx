@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Contacto() {
   return (
     <>
+    <Navbar />
     <main className="container my-5" id="contacto">
       <section className="row justify-content-center">
         <form className="col-md-8 col-lg-6 needs-validation" method="post" noValidate>
