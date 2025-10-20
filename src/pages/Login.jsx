@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/icon.png';
+import Navbar from "../components/Navbar";
 import "../css/style.css";
+import Footer from "../components/Footer";
 
 
 function Login() {
@@ -11,6 +13,7 @@ function Login() {
   
   return (
     <>  
+    <Navbar />
     <main class="container my-5">
 
       <section className="text-center m-5">
@@ -98,6 +101,7 @@ function Login() {
         </article>
       </section>  
     </main>
+    <Footer/>
     </>
   );
 }
