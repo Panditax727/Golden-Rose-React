@@ -8,7 +8,8 @@ import SideBarAdmin from "../../components/SideBarAdmin";
 function Administrador() {
   useEffect(() => {
     document.title = "Administrador | Golden Rose";
-  }, []);  
+  }, []); 
+  
   return (
     <>
     <div className="d-flex">
