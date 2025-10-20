@@ -16,7 +16,6 @@ function Search() {
 
     return (
         <>
-        {/* 🔍 Barra de búsqueda */}
         <div className="input-group mb-3">
             <span className="input-group-text" id="basic-addon1">
                 <i className="bi bi-search"></i>
@@ -25,7 +24,7 @@ function Search() {
             <input
                 type="search"
                 className="form-control"
-                placeholder="Vandals, Operator y más..."
+                placeholder="Busca tu skin favorita: Vandal, Operator, Karambit…"
                 aria-label="Buscar"
                 aria-describedby="basic-addon1"
                 value={query}
@@ -38,8 +37,6 @@ function Search() {
         </div>
 
         <FiltroNivelPrecios/>
-        
-        
         </>
     );
 }
