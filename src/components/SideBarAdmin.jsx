@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 
 
 function SideBarAdmin() {
+
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userName');
+
+    window.location.href = '/login'
+  }
+
   return (
     <aside className="d-flex flex-column justify-content-between vh-100 border-end" style={{ width: "250px", backgroundColor: "#ff4655" }}>
         <header className="p-3 border-bottom">
@@ -94,7 +102,7 @@ function SideBarAdmin() {
                 </button>
             </Link>
             <Link className="text-decoration-none">                
-                <button className="btn btn-danger w-100">
+                <button onClick={handleLogout} className="btn btn-danger w-100">
                     <i className="bi bi-door-open me-2">
                     </i> Cerrar Sesión
                 </button>
