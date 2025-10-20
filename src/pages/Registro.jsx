@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/icon.png';
 import "../css/style.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 
@@ -13,6 +15,7 @@ function Registro() {
 
   return (
     <>
+    <Navbar />
     <main className="container my-5">
       <section id="registro" className="row justify-content-center">
 
@@ -116,6 +119,7 @@ function Registro() {
         </article>
       </section>
     </main>
+    <Footer/>
     </>
   );
 }
