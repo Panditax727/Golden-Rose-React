@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import FiltroNivelPrecios from "./FiltroNivelPrecios";
+import EdicionFiltro from "./EdicionFiltro";
 
 function Search() {
     const [query, setQuery] = useState("");
-    const [filter, setFilter] = useState("Todas");
-    const [selected, setSelected] = useState(""); // ← faltaba este estado
+    const [filtro, setFiltro] = useState("Todas");
+    const [seleccionado, setSeleccionado] = useState(""); 
 
     const handleSearch = () => {
-        console.log("Buscando:", query, "| Filtro:", filter, "| Edición:", selected);
+        console.log("Buscando:", query, "| Filtro:", filtro, "| Edición:", seleccionado);
     };
 
     const handleChange = (e) => {
-        setSelected(e.target.value);
+        setSeleccionado(e.target.value);
     };
 
     return (
@@ -36,7 +36,7 @@ function Search() {
             </button>
         </div>
 
-        <FiltroNivelPrecios/>
+        <EdicionFiltro/>
         </>
     );
 }
