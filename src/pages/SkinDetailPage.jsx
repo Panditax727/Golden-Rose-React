@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import skinsData from '../data/data.json';
+import Navbar from "../components/Navbar";
 
 function SkinDetailPage() {
     const { id } = useParams();
@@ -16,6 +17,8 @@ function SkinDetailPage() {
     }
 
     return (
+        <>
+        <Navbar />
         <Container className="mt-5">
             <Row>
                 <Col md={12} className="mb-4">
@@ -46,6 +49,7 @@ function SkinDetailPage() {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 }
 
