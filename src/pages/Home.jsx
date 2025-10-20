@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Carousel, Row, Col, Card, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import Navbar from "../components/Navbar";
 import skinsData from '../data/data.json';
+import Footer from '../components/Footer';
 
 function Home() {
   const navigate = useNavigate();
@@ -9,6 +11,8 @@ function Home() {
   const featured = skinsData.slice(0, 3);
 
   return (
+    <>
+    <Navbar />
     <Container className="my-5">
       {/* Carousel de skins destacadas */}
       <Carousel  id='carouselSkins' interval={3000} pause='hover'>
@@ -72,6 +76,8 @@ function Home() {
         </Row>
       </section>
     </Container>
+    <Footer/>
+    </>
   );
 }
 
