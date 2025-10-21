@@ -8,6 +8,7 @@ import Carrito from "./pages/Carrito";
 import Contacto from "./pages/Contacto";
 import Administrador from "./pages/admin/Administrador";
 import HomeClient from "./pages/HomeClient";
+import Blog from "./pages/Blog";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/carrito" element={<Carrito />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
