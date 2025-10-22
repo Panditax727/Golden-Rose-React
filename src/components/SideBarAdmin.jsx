@@ -13,9 +13,9 @@ function SideBarAdmin() {
   }
 
   return (
-    <aside className="d-flex flex-column justify-content-between vh-100 border-end" style={{ width: "250px", backgroundColor: "#ff4655" }}>
-        <header className="p-3 border-bottom">
-            <h4 className="d-flex align-items-center mb-0">
+    <aside className="d-flex flex-column justify-content-between vh-100 border-end position-sticky top-0" style={{ width: "250px", backgroundColor: "#ff4655" }}>
+        <header className="p-3 border-bottom m-1">
+            <h4 className="d-flex align-items-center">
             <img
               src={logo}
               alt="Logo"
@@ -30,7 +30,7 @@ function SideBarAdmin() {
             />                
             <span
                 style={{
-                fontSize: "1.7rem",
+                fontSize: "1.4rem",
                 fontWeight: "bold",
                 letterSpacing: "1px",
                 color: "#FFD700",
@@ -44,7 +44,7 @@ function SideBarAdmin() {
         </header>
 
         {/* Panel lateral izquierdo */}
-        <nav className="flex-grow-1">
+        <nav className="flex-grow-1 m-2">
             <ul className="nav nav-pills flex-column">
                 <li className="nav-item mb-1">
                     <Link to="/" className="nav-link active">
@@ -81,33 +81,38 @@ function SideBarAdmin() {
                     <i className="bi bi-person-lines-fill me-2"></i> Reporte
                     </Link>
                 </li>
+                <hr />
             </ul>
-        </nav>
-        
-        <section className="sidebar-footer px-3 mb-3">
-            <hr />
-            <div className="mb-3">
-                <Link to="/perfil" className="btn btn-outline-secondary w-100">
-                    <i className="bi bi-person-circle me-2"></i> Perfil
-                </Link>
-            </div>
-        </section>
 
-        <section className="d-grid gap-2">
-            <hr />
-            <Link className="text-decoration-none" to="/">                
-                <button className="btn btn-dark w-100">
-                    <i className="bi bi-shop me-2">
-                    </i> Tienda
-                </button>
-            </Link>
-            <Link className="text-decoration-none">                
-                <button onClick={handleLogout} className="btn btn-danger w-100">
-                    <i className="bi bi-door-open me-2">
-                    </i> Cerrar Sesión
-                </button>
-            </Link>                                          
-        </section>
+            <section className="m-1">
+                <div>
+                    <Link to="/perfil" className="btn btn-outline-secondary w-100">
+                        <i className="bi bi-person-circle me-2"></i> Perfil
+                    </Link>
+                </div>
+            </section>
+
+            <section className="d-grid gap-3 m-1 p-1">
+                <hr />
+                <Link className="text-decoration-none" to="/">                
+                    <button className="btn btn-dark w-100">
+                        <i className="bi bi-shop me-2">
+                        </i> Tienda
+                    </button>
+                </Link>
+                <Link className="text-decoration-none">                
+                    <button onClick={handleLogout} className="btn btn-outline-light w-100">
+                        <i className="bi bi-door-open me-2 ">
+                        </i> Cerrar Sesión
+                    </button>
+                </Link>                                          
+            </section>            
+
+
+
+
+
+        </nav>
     </aside>
   );
 }
