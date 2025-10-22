@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import SideBarAdmin from "../../components/SideBarAdmin";
+import "../../css/home_style.css";
 
 function Administrador() {
   useEffect(() => {
@@ -14,7 +15,7 @@ function Administrador() {
     <>
     <div className="d-flex">
       <SideBarAdmin/>
-      <main className="rose_gold p-4">
+      <main className="main-content rosegold m-1 p-4">
         {/* Encabezado principal */}
         <header className="d-flex justify-content-between align-items-center mb-4">
           <h2>¡Bienvenido Administrador!</h2>
